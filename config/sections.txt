@@ -1,0 +1,7 @@
+slider
+	name = Carrusel de productos
+	description = Los productos aparecen dentro de un carrusel en la página de inicio (el diseño compacto muestra hasta 5 productos y el espaciado hasta 9).
+	
+primary
+	name = Destacados
+	description = Los productos aparecen destacados en la página de inicio (el diseño compacto muestra hasta 9 productos y el espaciado hasta 16).

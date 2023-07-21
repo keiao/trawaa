@@ -1,0 +1,845 @@
+Colores de tu marca
+	meta
+		icon = paint-brush
+		advanced = false
+	color
+		name = primary_color
+		description = Color principal
+	subtitle
+		subtitle = <div class='js-color-description'>Aplica a los botones y al precio del producto.</div>
+	color
+		name = accent_color
+		description = Color de acento
+	subtitle
+		subtitle = <div class='js-color-description'>Aplica a promociones y a mensajes de descuento, envío gratis y cuotas sin interés.</div>
+	checkbox
+		name = accent_color_active
+		description = Usar color de acento
+	title
+		title = Colores de contraste
+	color
+		name = background_color
+		description = Color de fondo
+	color
+		name = text_color
+		description = Color de textos
+	description
+		description = Para facilitar la lectura, asegurate de que los colores contrasten entre sí.
+	title
+		title = Combinaciones predeterminadas
+	description
+		description = Ideales para restablecer los colores por defecto del diseño.
+	palettes
+		palettes
+			palette_1
+				primary_color = #24fbce
+				background_color = #ffffff
+				text_color = #000000
+				accent_color = #FF59EE
+			palette_2
+				primary_color = #000000
+				background_color = #ffffff
+				text_color = #000000
+				accent_color = #E5D373
+			palette_3
+				primary_color = #6e6043
+				background_color = #ffffff
+				text_color = #9b9a9a
+				accent_color = #DAB99A
+	subtitle
+		subtitle = <a target='_blank' href='https://ayuda.tiendanube.com/es_ES/124497-colores-de-tu-marca/como-cambiar-los-colores-de-mi-diseno/?utm_source=admin-desktop&utm_medium=feature-page&utm_campaign=help'>¿Cómo cambio los colores de mi diseño?</a>
+		
+Tipo de letra
+	meta
+		icon = font
+		advanced = false
+	font
+		name = font_headings
+		description = Títulos de páginas y banners
+		values
+			"Rubik", sans-serif = Rubik
+			"Muli", sans-serif = Muli
+			"Playfair Display", Helvetica, Arial, sans-serif = Playfair
+			"Libre Baskerville", serif = Libre Baskerville
+			"Open Sans",sans-serif = Open Sans
+			"Slabo 27px", serif = Slabo
+			"Lora", serif = Lora			
+			"Droid Sans", Sans-serif = Droid Sans
+			"Poppins", Sans-serif = Poppins
+			"Niramit", Sans-serif = Niramit
+	font
+		name = font_rest
+		description = Texto en el resto del sitio
+		values
+			"Rubik", sans-serif = Rubik
+			"Muli", sans-serif = Muli
+			"Lato", Helvetica, Arial, sans-serif = Lato
+			"Libre Baskerville", serif = Libre Baskerville
+			"Open Sans",sans-serif = Open Sans
+			"Slabo 27px", serif = Slabo
+			"Lora", serif = Lora			
+			"Droid Sans", Sans-serif = Droid Sans
+			"Poppins", Sans-serif = Poppins
+			"Niramit", Sans-serif = Niramit
+
+Tipo de diseño 
+	meta
+		icon = magic
+		advanced = true
+	description
+		description = Define el aspecto general de tu diseño (botones, banners, campos de formularios y espacios entre elementos) sin afectar tus otras configuraciones.
+	dropdown
+		name = theme_variant
+		description = Diseño
+		values
+			squared = Compacto con bordes rectos
+			rounded = Espaciado con bordes curvos
+	subtitle
+		subtitle = <a target='_blank' href='https://idea-theme.mitiendanube.com'>Tienda de ejemplo con diseño compacto</a>
+	subtitle
+		subtitle = <a target='_blank' href='https://idea-themev2.mitiendanube.com'>Tienda de ejemplo con diseño espaciado</a>
+Encabezado
+	meta
+		icon = arrow-up
+		advanced = true
+	dropdown
+		name = head_background
+		description = Color de fondo del encabezado
+		values
+			light = Color de fondo
+			dark = Color de textos
+			primary = Color principal
+	checkbox
+		name = head_transparent
+		description = Encabezado transparente sobre el carrusel de imágenes
+	checkbox
+		name = head_fix
+		description = Encabezado siempre visible al navegar la tienda
+	checkbox
+		name = search_more_visible
+		description = Buscador siempre visible en computadoras
+	checkbox
+		name = account_more_visible
+		description = Cuenta de usuarios siempre visible en computadoras
+	title
+		title = Barra de anuncio
+	checkbox
+		name = ad_bar
+		description = Mostrar barra de anuncio
+	i18n_input
+		name = ad_text
+		description = Mensaje
+	i18n_input
+		name = ad_url
+		description = Link (opcional)
+	dropdown
+		name = ad_bar_background
+		description = Color de fondo de la barra de anuncio
+		values
+			light = Color de fondo
+			dark = Color de textos
+			primary = Color principal
+	checkbox
+		name = ad_bar_transparent
+		description = Aplicar color con transparencia a la barra de anuncio
+
+
+Página de inicio
+	meta
+		icon = home
+		advanced = true
+	collapse
+		title = Carrusel de imágenes
+	checkbox
+		name = slider_viewport_height
+		description = Extender al alto de la pantalla
+	subtitle
+		subtitle = Imágenes para computadoras
+	gallery
+		name = slider
+		gallery_image = Agregar imagen
+		gallery_link = [Opcional] Página web a la que quieres que te lleve la imagen al hacer click
+		gallery_width = 1580
+		gallery_height = 850
+		gallery_more_info = true
+	subtitle
+		subtitle = Imágenes para celulares
+	description
+		description = Mejorá la calidad y velocidad de carga con esta opción
+	checkbox
+		name = toggle_slider_mobile
+		description = Cargar otras imágenes para celulares
+	gallery
+		name = slider_mobile
+		gallery_image = Agregar imagen
+		gallery_link = [Opcional] Página web a la que quieres que te lleve la imagen al hacer click
+		gallery_width = 820
+		gallery_height = 1460
+		gallery_more_info = true
+	subtitle
+		subtitle = <a target='_blank' data-toggle-info='show-on_slider_mobile-inactive' href='https://ayuda.tiendanube.com/es/articles/3297783-como-usar-el-carrusel-de-imagenes-para-las-plantillas-idea-bahia-y-amazonas'>¿Cómo diseñar las imágenes para tu carrusel?</a>
+	collapse
+		title = Carrusel de productos
+	description
+		description = Elegí una imagen para mostrar al lado del carrusel
+	image
+		original = product_slider.jpg
+		title = Cargar imagen (JPG, GIF, PNG)
+		width = 600
+		height = 600
+	i18n_input
+		name = product_slider_title
+		description = Título
+	i18n_input
+		name = product_slider_description
+		description = Descripción
+	i18n_input
+		name = product_slider_url
+		description = Link
+	subtitle
+		subtitle = <a target='_blank' href='/admin/themes/settings/product_order/'>Elegí los productos del carrusel</a>
+	description
+		description = El diseño compacto muestra hasta 5 productos y el espaciado hasta 9.
+	subtitle
+		subtitle = <a href='#instatheme=tipo-de-diseno'>Cambiar el tipo de diseño</a>
+	collapse
+		title = Información de envíos, pagos y compra
+	checkbox
+		name = banner_services
+		description = Mostrar los banners en la página principal
+	subtitle
+		subtitle = BANNER 1
+	dropdown
+		name = banner_services_01_icon
+		description = Ícono
+		values
+			shipping = Envíos
+			card = Tarjetas de crédito
+			security = Seguridad
+			returns = Cambios y devoluciones
+			whatsapp = WhatsApp
+			promotions = Promociones
+			cash = Pago en efectivo
+			hand = Cuidados
+			home = Quedate en casa
+			office = Estamos juntos
+	i18n_input
+		name = banner_services_01_title
+		description = Título
+	i18n_input
+		name = banner_services_01_description
+		description = Descripción
+	i18n_input
+		name = banner_services_01_url
+		description = Link
+	subtitle
+		subtitle = BANNER 2
+	dropdown
+		name = banner_services_02_icon
+		description = Ícono
+		values
+			shipping = Envíos
+			card = Tarjetas de crédito
+			security = Seguridad
+			returns = Cambios y devoluciones
+			whatsapp = WhatsApp
+			promotions = Promociones
+			cash = Pago en efectivo
+			hand = Cuidados
+			home = Quedate en casa
+			office = Estamos juntos
+	i18n_input
+		name = banner_services_02_title
+		description = Título
+	i18n_input
+		name = banner_services_02_description
+		description = Descripción
+	i18n_input
+		name = banner_services_02_url
+		description = Link
+	subtitle
+		subtitle = BANNER 3
+	dropdown
+		name = banner_services_03_icon
+		description = Ícono
+		values
+			shipping = Envíos
+			card = Tarjetas de crédito
+			security = Seguridad
+			returns = Cambios y devoluciones
+			whatsapp = WhatsApp
+			promotions = Promociones
+			cash = Pago en efectivo
+			hand = Cuidados
+			home = Quedate en casa
+			office = Estamos juntos
+	i18n_input
+		name = banner_services_03_title
+		description = Título
+	i18n_input
+		name = banner_services_03_description
+		description = Descripción
+	i18n_input
+		name = banner_services_03_url
+		description = Link
+	subtitle
+		subtitle = BANNER 4
+	dropdown
+		name = banner_services_04_icon
+		description = Ícono
+		values
+			shipping = Envíos
+			card = Tarjetas de crédito
+			security = Seguridad
+			returns = Cambios y devoluciones
+			whatsapp = WhatsApp
+			promotions = Promociones
+			cash = Pago en efectivo
+			hand = Cuidados
+			home = Quedate en casa
+			office = Estamos juntos
+	i18n_input
+		name = banner_services_04_title
+		description = Título
+	i18n_input
+		name = banner_services_04_description
+		description = Descripción
+	i18n_input
+		name = banner_services_04_url
+		description = Link
+	subtitle
+		subtitle = BANNER 5
+	dropdown
+		name = banner_services_05_icon
+		description = Ícono
+		values
+			shipping = Envíos
+			card = Tarjetas de crédito
+			security = Seguridad
+			returns = Cambios y devoluciones
+			whatsapp = WhatsApp
+			promotions = Promociones
+			cash = Pago en efectivo
+			hand = Cuidados
+			home = Quedate en casa
+			office = Estamos juntos
+	i18n_input
+		name = banner_services_05_title
+		description = Título
+	i18n_input
+		name = banner_services_05_description
+		description = Descripción
+	i18n_input
+		name = banner_services_05_url
+		description = Link
+	subtitle
+		subtitle = BANNER 6
+	dropdown
+		name = banner_services_06_icon
+		description = Ícono
+		values
+			shipping = Envíos
+			card = Tarjetas de crédito
+			security = Seguridad
+			returns = Cambios y devoluciones
+			whatsapp = WhatsApp
+			promotions = Promociones
+			cash = Pago en efectivo
+			hand = Cuidados
+			home = Quedate en casa
+			office = Estamos juntos
+	i18n_input
+		name = banner_services_06_title
+		description = Título
+	i18n_input
+		name = banner_services_06_description
+		description = Descripción
+	i18n_input
+		name = banner_services_06_url
+		description = Link
+	collapse
+		title = Mensaje institucional
+	i18n_input
+		name = welcome_message
+		description = Título
+	i18n_input
+		name = welcome_text
+		description = Descripción
+
+	collapse
+		title = Banners de categorías
+	description
+		description = Los tamaños de los banners de categorías dependen de la cantidad que quieras mostrar en la página de inicio de tu tienda.
+	subtitle
+		subtitle = ¿Cuántos banners de categorías queres en tu página de inicio?
+	dropdown_banners
+		name = banners_qty
+		description = Cantidad de Banners
+		values
+			four_banner = 4 Banners
+			three_banner = 3 Banners
+			two_banner = 2 Banners
+			one_banner = 1 Banner
+		infograph
+			one_banner = <svg width="135" height="57" fill="none"><path fill="#fff" d="M0 0h135v57H0z"/><rect x=".5" y=".5" width="134" height="56" rx="1.5" fill="#C8E9FF" stroke="#439BD7"/><path d="M68.3494 22.42v9.1h-.936v-8.268h-2.145v-.832h3.081z" fill="#439BD7"/></svg>
+			two_banner = <svg width="135" height="56" fill="none"><path fill="#fff" d="M0 0h135v56H0z"/><rect x=".5" y=".5" width="63.4663" height="55" rx="1.5" fill="#C8E9FF" stroke="#439BD7"/><rect x="71.0337" y=".5" width="63.4663" height="55" rx="1.5" fill="#C8E9FF" stroke="#439BD7"/><path d="M33.0825 22.06v9.1h-.936v-8.268h-2.145v-.832h3.081zM105.204 30.328v.832h-6.3829v-.663l3.7829-3.705c.477-.468.797-.871.962-1.209.173-.3466.26-.6933.26-1.04 0-.5373-.186-.9533-.559-1.248-.364-.3033-.888-.455-1.573-.455-1.066 0-1.8936.338-2.4829 1.014l-.663-.572c.3553-.416.806-.7366 1.352-.962.5549-.2253 1.1789-.338 1.8719-.338.927 0 1.66.221 2.197.663.546.4334.819 1.0314.819 1.794 0 .468-.104.9187-.312 1.352-.208.4334-.602.9317-1.183 1.495l-3.094 3.042h5.005z" fill="#439BD7"/></svg>
+			three_banner = <svg width="135" height="56" fill="none"><path fill="#fff" d="M0 0h135v56H0z"/><rect x=".5" y=".5" width="63.4663" height="55" rx="1.5" fill="#C8E9FF" stroke="#439BD7"/><rect x="71.0337" y=".5" width="63.4663" height="23.64" rx="1.5" fill="#C8E9FF" stroke="#439BD7"/><rect x="71.0337" y="32.6067" width="63.4663" height="22.8933" rx="1.5" fill="#C8E9FF" stroke="#439BD7"/><path d="M33.0825 22.8066v9.1h-.936v-8.268h-2.145v-.832h3.081zM105.963 15.6347v.832h-6.3835v-.663l3.7835-3.705c.476-.468.797-.871.962-1.209.173-.3467.26-.6934.26-1.04 0-.5374-.187-.9534-.559-1.248-.364-.3034-.889-.455-1.573-.455-1.066 0-1.894.338-2.4835 1.014l-.663-.572c.3553-.416.8065-.7367 1.3525-.962.554-.2254 1.178-.338 1.872-.338.927 0 1.659.221 2.197.663.546.4333.819 1.0313.819 1.794 0 .468-.104.9186-.312 1.352-.208.4333-.603.9316-1.183 1.495l-3.094 3.042h5.005zM102.868 42.88c.953.052 1.677.312 2.171.78.503.4593.754 1.0616.754 1.807 0 .52-.126.9836-.377 1.391-.251.3986-.624.715-1.118.949-.494.234-1.096.351-1.807.351-.659 0-1.283-.104-1.872-.312-.581-.2167-1.0488-.5027-1.4041-.858l.455-.741c.3033.312.7061.5676 1.2091.767.503.1906 1.04.286 1.612.286.745 0 1.322-.1604 1.729-.481.407-.3294.611-.78.611-1.352 0-.5634-.204-1.0054-.611-1.326-.407-.3207-1.023-.481-1.846-.481h-.65v-.689l2.522-3.159h-4.6541v-.832h5.8501v.663l-2.574 3.237z" fill="#439BD7"/></svg>
+			four_banner = <svg width="135" height="57" fill="none"><g clip-path="url(#clip0)"><path fill="#fff" d="M0 0h135v57H0z"/><rect x=".5" y=".5" width="63.5618" height="55.5954" rx="1.5" fill="#C8E9FF" stroke="#439BD7"/><rect x="71.1382" y=".5" width="63.5618" height="23.902" rx="1.5" fill="#C8E9FF" stroke="#439BD7"/><rect x="71.1382" y="32.1934" width="27.8629" height="23.902" rx="1.5" fill="#C8E9FF" stroke="#439BD7"/><rect x="106.837" y="32.1934" width="27.8629" height="23.902" rx="1.5" fill="#C8E9FF" stroke="#439BD7"/><path d="M33.1302 22.2744v9.1h-.936v-8.268h-2.145v-.832h3.081zM124.502 46.3382h-1.82v2.392h-.936v-2.392h-5.135v-.676l4.823-6.032h1.04l-4.654 5.876h3.952v-2.106h.91v2.106h1.82v.832zM85.5505 43.5302c.9534.052 1.677.312 2.171.78.5027.4594.754 1.0617.754 1.807 0 .52-.1256.9837-.377 1.391-.2513.3987-.624.715-1.118.949-.494.234-1.0963.351-1.807.351-.6586 0-1.2826-.104-1.872-.312-.5806-.2166-1.0486-.5026-1.404-.858l.455-.741c.3034.312.7064.5677 1.209.767.5027.1907 1.04.286 1.612.286.7454 0 1.3217-.1603 1.729-.481.4074-.3293.611-.78.611-1.352 0-.5633-.2036-1.0053-.611-1.326-.4073-.3206-1.0226-.481-1.846-.481h-.65v-.689l2.522-3.159h-4.654v-.832h5.85v.663l-2.574 3.237zM105.355 16.2049v.832h-6.3828v-.663l3.7828-3.705c.477-.468.798-.871.962-1.209.174-.3467.26-.6934.26-1.04 0-.5374-.186-.9534-.559-1.248-.364-.3034-.888-.455-1.573-.455-1.066 0-1.8935.338-2.4828 1.014l-.663-.572c.3553-.416.806-.7367 1.3518-.962.555-.2254 1.179-.338 1.872-.338.928 0 1.66.221 2.197.663.546.4333.819 1.0313.819 1.794 0 .468-.104.9186-.312 1.352-.208.4333-.602.9316-1.183 1.495l-3.094 3.042h5.005z" fill="#439BD7"/></g><defs><clipPath id="clip0"><path fill="#fff" d="M0 0h135v57H0z"/></clipPath></defs></svg>
+		infosizes
+			one_banner = <span class="size"><span class="title">Banner 1</span><i class="far fa-arrows-alt-h"></i>1400px<i class="far fa-arrows-alt-v"></i>700px</span>
+			two_banner = <span class="size"><span class="title">Banner 1 y 2</span><i class="far fa-arrows-alt-h"></i>700px<i class="far fa-arrows-alt-v"></i>700px</span>
+			three_banner = <span class="size"><span class="title">Banner 1</span><i class="far fa-arrows-alt-h"></i>700px<i class="far fa-arrows-alt-v"></i>700px</span> <span class="size"><span class="title">Banner 2 y 3</span><i class="far fa-arrows-alt-h"></i>700px<i class="far fa-arrows-alt-v"></i>340px</span>
+			four_banner = <span class="size"><span class="title">Banner 1</span><i class="far fa-arrows-alt-h"></i>700px<i class="far fa-arrows-alt-v"></i>700px</span> <span class="size"><span class="title">Banner 2</span><i class="far fa-arrows-alt-h"></i>700px<i class="far fa-arrows-alt-v"></i>340px</span> <span class="size"><span class="title">Banner 3 y 4</span> <i class="far fa-arrows-alt-h"></i>340px<i class="far fa-arrows-alt-v"></i>340px</span>
+	subtitle
+		subtitle = Banner de categoría 1
+	checkbox
+		name = banner_01_show
+		description = Mostrar banner
+	image
+		original = banner_01.jpg
+		title = Cargar imagen (JPG, GIF, PNG)
+		width = 600
+		height = 600
+		dynamic_dimensions
+			one_banner = 1400x700
+			two_banner = 700x700
+			three_banner = 700x700
+			four_banner = 700x700
+	i18n_input
+		name = banner_01_title
+		description = Título
+	i18n_input
+		name = banner_01_button
+		description = Texto del botón
+	i18n_input
+		name = banner_01_url
+		description = Link
+	subtitle
+		subtitle = Banner de categoría 2
+	checkbox
+		name = banner_02_show
+		description = Mostrar banner
+	image
+		original = banner_02.jpg
+		title = Cargar imagen (JPG, GIF, PNG)
+		width = 600
+		height = 600
+		dynamic_dimensions
+			two_banner = 700x700
+			three_banner = 700x340
+			four_banner = 700x340
+	i18n_input
+		name = banner_02_title
+		description = Título
+	i18n_input
+		name = banner_02_button
+		description = Texto del botón
+	i18n_input
+		name = banner_02_url
+		description = Link
+	subtitle
+		subtitle = Banner de categoría 3
+	checkbox
+		name = banner_03_show
+		description = Mostrar banner
+	image
+		original = banner_03.jpg
+		title = Cargar imagen (JPG, GIF, PNG)
+		width = 600
+		height = 600
+		dynamic_dimensions
+			three_banner = 700x340
+			four_banner = 340x340
+	i18n_input
+		name = banner_03_title
+		description = Título
+	i18n_input
+		name = banner_03_button
+		description = Texto del botón
+	i18n_input
+		name = banner_03_url
+		description = Link
+	subtitle
+		subtitle = Banner de categoría 4
+	checkbox
+		name = banner_04_show
+		description = Mostrar banner
+	image
+		original = banner_04.jpg
+		title = Cargar imagen (JPG, GIF, PNG)
+		width = 600
+		height = 600
+		dynamic_dimensions
+			four_banner = 340x340
+	i18n_input
+		name = banner_04_title
+		description = Título
+	i18n_input
+		name = banner_04_button
+		description = Texto del botón
+	i18n_input
+		name = banner_04_url
+		description = Link
+
+	collapse
+		title = Productos destacados
+	i18n_input
+		description = Título
+		name = featured_products_title
+	subtitle
+		subtitle = <a target='_blank' href='/admin/themes/settings/product_order/'>Elegí cuáles vas a destacar</a>
+	description
+		description = El diseño compacto muestra hasta 9 productos y el espaciado hasta 16.
+	subtitle
+		subtitle = <a href='#instatheme=tipo-de-diseno'>Cambiar el tipo de diseño</a>
+	collapse
+		title = Video
+	i18n_input
+		name = video_embed
+		description = Link (Youtube o Vimeo)
+	description
+		description = Ej: https://www.youtube.com/watch?v=dptrWehSI8c
+	i18n_input
+		name = video_title
+		description = Título
+	i18n_input
+		name = video_text
+		description = Descripción
+	collapse
+		title = Newsletter
+	checkbox
+		name = news_show
+		description = Permitir que tus clientes se registren para recibir novedades
+	i18n_input
+		name = news_title
+		description = Elegí el título para la sección
+	i18n_input
+		name = news_text
+		description = ¡Escribí algo para que tus clientes se suscriban a tu newsletter!
+	collapse
+		title = Orden de secciones
+	dropdown
+		name = home_order_position_1
+		description = Posición 1
+		values
+			welcome = Mensaje institucional
+			products = Productos Destacados
+			informatives = Información de envíos, pagos y compra
+			categories = Banners de Categorías
+			look = Carrusel de productos
+			video = Video
+			instafeed = Publicaciones de Instagram
+			empty = Ninguno
+	dropdown
+		name = home_order_position_2
+		description = Posición 2
+		values
+			welcome = Mensaje institucional
+			products = Productos Destacados
+			informatives = Información de envíos, pagos y compra
+			categories = Banners de Categorías
+			look = Carrusel de productos
+			video = Video
+			instafeed = Publicaciones de Instagram
+			empty = Ninguno
+	dropdown
+		name = home_order_position_3
+		description = Posición 3
+		values
+			welcome = Mensaje institucional
+			products = Productos Destacados
+			informatives = Información de envíos, pagos y compra
+			categories = Banners de Categorías
+			look = Carrusel de productos
+			video = Video
+			instafeed = Publicaciones de Instagram
+			empty = Ninguno
+	dropdown
+		name = home_order_position_4
+		description = Posición 4
+		values
+			welcome = Mensaje institucional
+			products = Productos Destacados
+			informatives = Información de envíos, pagos y compra
+			categories = Banners de Categorías
+			look = Carrusel de productos
+			video = Video
+			instafeed = Publicaciones de Instagram
+			empty = Ninguno
+	dropdown
+		name = home_order_position_5
+		description = Posición 5
+		values
+			welcome = Mensaje institucional
+			products = Productos Destacados
+			informatives = Información de envíos, pagos y compra
+			categories = Banners de Categorías
+			look = Carrusel de productos
+			video = Video
+			instafeed = Publicaciones de Instagram
+			empty = Ninguno
+	dropdown
+		name = home_order_position_6
+		description = Posición 6
+		values
+			welcome = Mensaje institucional
+			products = Productos Destacados
+			informatives = Información de envíos, pagos y compra
+			categories = Banners de Categorías
+			look = Carrusel de productos
+			video = Video
+			instafeed = Publicaciones de Instagram
+			empty = Ninguno
+	dropdown
+		name = home_order_position_7
+		description = Posición 7
+		values
+			welcome = Mensaje institucional
+			products = Productos Destacados
+			informatives = Información de envíos, pagos y compra
+			categories = Banners de Categorías
+			look = Carrusel de productos
+			video = Video
+			instafeed = Publicaciones de Instagram
+			empty = Ninguno
+
+Listado de productos
+	meta
+		icon = list-ul
+		advanced = true
+	title
+		title = Imagen para las categorías
+	image
+		title = Cargar imagen (JPG, GIF, PNG)
+		original = banner-products.jpg
+		width = 1580	
+		height = 220
+		url = banner_products_url
+		url_description = [Opcional] Página web a la que quieres que te lleve el banner de las páginas de categorías al hacer click
+	subtitle
+		subtitle = Podés subir una imagen diferente para cada categoría <a target='_blank' href='/admin/categories/'>desde acá</a>
+	title
+		title = Filtros
+	subtitle
+		subtitle = <span class='js-description-html'><strong>Configurá los filtros</strong> de tu tienda desde <a target='_blank' href='/admin/v2/filters' class='font-bold'>el administrador</a></span>
+	title
+		title = Productos en el listado
+	dropdown
+		name = grid_columns
+		description = Cantidad de productos por fila en computadora
+		values
+			2 = 2 productos
+			3 = 3 productos
+			4 = 4 productos
+	title
+		title = Foto del producto
+	checkbox
+		name = product_hover
+		description = Mostrar la segunda foto al posar el mouse
+	title
+		title = Compra rápida
+	checkbox
+		name = quick_shop
+		description = Permitir que tus clientes puedan agregar productos a su carrito rápidamente desde el listado de productos
+	title
+		title = Variantes de color
+	checkbox
+		name = product_color_variants
+		description = Mostrar variantes de color en listado de productos
+	title
+		title = Información de cuotas
+	checkbox
+		name = product_installments
+		description = Mostrar cuotas en listado de productos
+
+Detalle de producto
+	meta
+		icon = cube
+		advanced = true
+	title
+		title = Formas de entrega
+	checkbox_global
+		name = shipping_calculator_product_page
+		description = Mostrar el calculador de costos de envío y locales físicos en la página de producto
+	subtitle
+		subtitle = <a target='_blank' href='/admin/shipping/'>Agregar medios de envío o locales físicos</a>
+	title
+		title = Información de cuotas
+	checkbox
+		name = product_detail_installments
+		description = Mostrar cuotas en la página de producto
+	title
+		title = Guía de talles
+	subtitle
+		subtitle = Cuando un producto tenga variantes de 'Talle', podés mostrar un pop-up con las medidas. Solo necesitás <a target='_blank' href='/admin/pages/'>crear una página</a> e incluir su link debajo.
+	i18n_input
+		name = size_guide_url
+		description = Link de la página
+	description
+		description = Ej: https://tudominio.com/guia-de-talles/
+	title
+		title = Stock
+	checkbox
+		name = product_stock
+		description = Mostrar stock disponible
+	title
+		title = Información de compra
+	description
+		description = Agregá información debajo del formulario de producto para concretar una compra. Por ejemplo: Cambios y devoluciones, políticas de cancelación o información sobre la entrega.
+	i18n_input
+		name = product_informative_banners_title
+		description = Título para esta sección
+	subtitle
+		subtitle = Información 1
+	checkbox
+		name = product_informative_banner_01_show
+		description = Mostrar información
+	i18n_input
+		name = product_informative_banner_01_title
+		description = Título
+	i18n_input
+		name = product_informative_banner_01_description
+		description = Descripción
+	subtitle
+		subtitle = Información 2
+	checkbox
+		name = product_informative_banner_02_show
+		description = Mostrar información
+	i18n_input
+		name = product_informative_banner_02_title
+		description = Título
+	i18n_input
+		name = product_informative_banner_02_description
+		description = Descripción
+	subtitle
+		subtitle = Información 3
+	checkbox
+		name = product_informative_banner_03_show
+		description = Mostrar información
+	i18n_input
+		name = product_informative_banner_03_title
+		description = Título
+	i18n_input
+		name = product_informative_banner_03_description
+		description = Descripción
+	title
+		title = Título para productos relacionados
+	i18n_input
+		description = Título
+		name = products_related_title
+
+
+Carrito de compras
+	meta
+		icon = shopping-cart
+		advanced = true
+	title
+		title = Carrito de compras rápidas
+	checkbox
+		name = ajax_cart
+		description = Tus clientes pueden agregar y ver los productos que van a comprar sin necesidad de ir a otra página, ya que la información está siempre visible.
+	title
+		title = Monto mínimo de compra
+	text
+		name = cart_minimum_value
+		description = ¿Cuál es el monto mínimo que tus clientes deben gastar?
+		placeholder = Ej.: 3000
+	subtitle
+		subtitle = <span class='legend'>Ingresá solamente números</span>
+	title
+		title = Formas de entrega
+	checkbox_global
+		name = shipping_calculator_cart_page
+		description = Mostrar el calculador de costos de envío y locales físicos en el carrito
+	subtitle
+		subtitle = <a target='_blank' href='/admin/shipping/'>Agregar medios de envío o locales físicos</a>
+
+Pie de página
+	meta
+		icon = arrow-down
+		advanced = true
+	dropdown
+		name = footer_background
+		description = Color de fondo del pie de página
+		values
+			default = Predeterminado
+			light = Color de fondo
+			dark = Color de textos
+			primary = Color principal
+	title
+		title = Menúes
+	subtitle
+		subtitle = Elegí el menú para el final de la página (footer). Si aún no configuraste ninguno, podés hacerlo <a target='_blank' href='/admin/navigation/?ref=submenu'>desde acá</a>
+	subtitle
+		subtitle = <a target='_blank' href='http://ayuda.tiendanube.com/diseno/como-cambio-el-menu-inferior-de-mi-tienda/?utm_source=admin-desktop&utm_medium=feature-page&utm_campaign=help'>¿Cómo cambio el menú inferior de mi tienda?</a>
+	menu
+		name = footer_menu
+		description = ¿Qué menú vas a mostrar al final de la página?
+	title
+		title = Datos de contacto
+	checkbox
+		name = contact_data_show
+		description = Mostrar datos de contacto en tu tienda
+	title
+		title = Medios de envío
+	checkbox_global
+		name = shipping_show
+		description = Mostrar medios de envío en tu tienda
+	title
+		title = Medios de pago
+	checkbox_global
+		name = payments_show
+		description = Mostrar medios de pago en tu tienda
+	title
+		title = Sellos personalizados en el footer
+	description
+		description = Podés agregar sellos de dos formas: subiendo una imagen o pegando el código Javascript o HTML
+	image
+		title = Imagen del sello
+		original = seal_img.jpg
+		width = 24
+		height = 24
+		url = seal_url
+		url_description = [Opcional] Página web externa a la que llevará la imagen del sello al hacer clic
+	subtitle
+		subtitle = Código Javascript o HTML del sello
+	textarea
+		name = custom_seal_code
+	
+Redes sociales
+	meta
+		icon = share-alt
+		advanced = true
+	title
+		title = Publicaciones de Instagram
+	description
+		description = El Feed de Instagram muestra automáticamente tus últimas publicaciones en la página de inicio de tu tienda. Tu perfil debe ser público.
+	checkbox
+		name = show_instafeed
+		description = Mostrar tus publicaciones de Instagram en la página de inicio de tu tienda
+	subtitle
+		subtitle = Para mostrar tus publicaciones necesitás generar un token, <a target='_blank' href='https://ayuda.tiendanube.com/es_ES/como-mostrar-mis-publicaciones-de-instagram-en-mi-tienda'>¿cómo configurarlo?</a>
+	title
+		title = Facebook
+	subtitle
+		subtitle = Comentarios en el producto
+	checkbox
+		name = show_product_fb_comment_box
+		description = Permitir que tus clientes te dejen comentarios con su usuario de Facebook en la página de producto
+	text
+		name = fb_admins
+		description = ID de tu perfil de Facebook
+	subtitle
+		subtitle = Es necesario si querés moderar los comentarios. Podés obtenerlo <a target='_blank' href='https://findmyfbid.in/'>acá</a>
+
+Edición avanzada de CSS
+	meta
+		icon = code
+		advanced = true
+	title
+		title = Para diseñadores web
+	css_code
+		name = css_code
+		description = Acá podes escribir código CSS para que se muestre en tu tienda
+	subtitle
+		subtitle = <a target='_blank' href='https://ayuda.tiendanube.com/es_ES/123225-edicion-avanzada-de-css/como-editar-el-diseno-con-codigo-css'>¿Cómo edito el código CSS de mi tienda?</a>
