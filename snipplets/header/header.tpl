@@ -67,6 +67,7 @@
 		{% endblock %}
 		{% block modal_body %}
 			{% snipplet "cart-panel.tpl" %}
+			{% include "snipplets/cart-slider-product.tpl" %}
 		{% endblock %}
 		{% block modal_foot %}
 			{% include "snipplets/cart-totals-and-cta.tpl" %}

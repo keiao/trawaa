@@ -1,4 +1,4 @@
-<div class="js-ajax-cart-list">
+<div class="js-ajax-cart-list marlon">
     {# Cart panel items #}
     {% if cart.items %}
       {% for item in cart.items %}
