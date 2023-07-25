@@ -5,7 +5,7 @@
 				<div class="col-md{% if settings.theme_variant == 'squared' %}-6{% else %}-3{% endif %}">
 					<div class="textbanner textbanner-slider banner-mid-height m-0">
 						{% if settings.product_slider_url %}
-                            <a href="{{ settings.product_slider_url | setting_url }}"{% if settings.product_slider_title %} title="{{ settings.product_slider_title }}" aria-label="{{ settings.produact_slider_title }}"{% else %} title="{{ 'Banner de' | translate }} {{ store.name }}" aria-label="{{ 'Banner de' | translate }} {{ store.name }}"{% endif %}>
+                            <a href="{{ settings.product_slider_url | setting_url }}"{% if settings.product_slider_title %} title="{{ settings.product_slider_title }}" aria-label="{{ settings.product_slider_title }}"{% else %} title="{{ 'Banner de' | translate }} {{ store.name }}" aria-label="{{ 'Banner de' | translate }} {{ store.name }}"{% endif %}>
                         {% endif %}
                         {% set banner_image = "product_slider.jpg" | has_custom_image %}
                         <div class="textbanner-image textbanner-slider-image{% if banner_image and (settings.product_slider_title or settings.product_slider_description) %} overlay{% endif %}">
