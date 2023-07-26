@@ -376,6 +376,29 @@ p{
   line-height: 30px;
 }
 
+{# slider cart shopping #}
+.cart-shopping-item {
+  display: flex;
+  padding: 1.2rem 1.25rem 1.2rem .3125rem;
+}
+
+.cart-shopping-info {
+  padding: 0 .8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.cart-shopping-title {
+  font-size: 0.9rem;
+}
+
+.cart-shopping-item-img {
+  max-width: 75px;
+  width: 100%;
+}
+
 {# /* // Lists */ #}
 
 .list {

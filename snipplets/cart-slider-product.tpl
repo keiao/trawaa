@@ -4,10 +4,63 @@
   {% endfor %}
 </div> #}
 
-{# {% for product in products %}
-    {% include 'snipplets/grid/item.tpl' %}
-{% endfor %} #}
+<div class="cart-shopping-content">
+    {% for product in products %}
+        {% set item_img_srcset = product.featured_image %}
+        {% set item_img_alt = product.featured_image.alt %}
 
+        <div class="cart-shopping-item">
+            <img
+                class="js-item-image lazyload cart-shopping-item-img"
+                src="{{ item_img_srcset | product_image_url('small')}}"
+                alt="{{ item_img_alt }}">
+
+            <div class="cart-shopping-info">
+                <h5 class="js-item-name cart-shopping-title"
+                    data-store="product-item-name-{{ product.id }}">
+                    {{ product.name }}
+                </h5>
+
+                {% if product.display_price %}
+                    <div
+                        class="cart-shopping-price"
+                        data-store="product-item-price-{{ product.id }}">
+                        <span class="js-price-display">
+                            {{ product.price | money }}
+                        </span>
+                        <span
+                            class="js-compare-price-display"
+                            {% if not product.compare_at_price or not product.display_price %}
+                                style="display: none;"
+                            {% else %}
+                                style="display: inline-block;"
+                            {% endif %}
+                        >
+                            {{ product.compare_at_price | money }}
+                        </span>
+                    </div>
+                {% endif %}
+            </div>
+
+            <div class="cart-shopping-item">
+                <p>{{ 'Agregar' | translate }}</p>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+
+{# <div class="js-swiper-cart swiper-container">
+    <div class="swiper-wrapper">
+        {% for product in products %}
+            <div class="swiper-slide">
+                {{ product.name }}
+            </div>
+        {% endfor %}
+    </div>
+    <div class="js-swiper-cart-pagination swiper-pagination"></div>
+    <div class="js-swiper-cart-prev swiper-button-prev">{% include "snipplets/svg/chevron-left.tpl" with {svg_custom_class: "svg-inline--fa fa-w-8 fa-lg svg-icon-text"} %}</div>
+    <div class="js-swiper-cart-next swiper-button-next">{% include "snipplets/svg/chevron-right.tpl" with {svg_custom_class: "svg-inline--fa fa-w-8 fa-lg svg-icon-text"} %}</div>
+</div> #}
 
 {# <div class="js-home-main-slider-container">
 <div class="{% if mobile %}js-home-mobile-slider{% else %}js-home-main-slider{% endif %}-visibility section-slider">
