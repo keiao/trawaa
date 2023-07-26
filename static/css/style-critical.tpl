@@ -378,6 +378,7 @@ p{
 
 {# slider cart shopping #}
 .cart-shopping-item {
+  position: relative;
   display: flex;
   padding: 1.2rem 1.25rem 1.2rem .3125rem;
 }
