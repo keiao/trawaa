@@ -400,6 +400,13 @@ p{
   width: 100%;
 }
 
+.swiper-cart-buttons {
+  position: absolute;
+  right: 30px;
+  display: flex;
+  gap: 15px;
+}
+
 {# /* // Lists */ #}
 
 .list {

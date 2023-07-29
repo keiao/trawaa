@@ -1,11 +1,13 @@
-{# <div>
-  {% for product in products %}
-    <span>{{ product.name }}</span>
-  {% endfor %}
-</div> #}
 
-{# <div class="cart-shopping-content">
-    {% for product in products %}
+ {# <div class="cart-shopping-content">
+   
+</div>  #}
+
+
+
+{# <div class="js-swiper-cart swiper-container">
+    <div class="swiper-wrapper">
+         {% for product in products %}
         {% set item_img_srcset = product.featured_image %}
         {% set item_img_alt = product.featured_image.alt %}
 
@@ -89,17 +91,14 @@
             </div>
         </div>
     {% endfor %}
+    </div>
+          <div class="swiper-cart-buttons">
+		    <div class="js-swiper-cart-control js-swiper-cart-prev">{% include "snipplets/svg/chevron-left.tpl" with {svg_custom_class: "svg-inline--fa fa-w-8 fa-lg svg-icon-text"} %}</div>
+
+		    <div class="js-swiper-cart-control js-swiper-cart-next">{% include "snipplets/svg/chevron-right.tpl" with {svg_custom_class: "svg-inline--fa fa-w-8 fa-lg svg-icon-text"} %}</div>
+          </div>
 </div> #}
 
-{# <div class="js-swiper-cart swiper-container">
-    <div class="swiper-wrapper">
-        {% for product in products %}
-            <div class="swiper-slide">
-                {{ product.name }}
-            </div>
-        {% endfor %}
-    </div>
-    <div class="js-swiper-cart-pagination swiper-pagination"></div>
-    <div class="js-swiper-cart-prev swiper-button-prev">{% include "snipplets/svg/chevron-left.tpl" with {svg_custom_class: "svg-inline--fa fa-w-8 fa-lg svg-icon-text"} %}</div>
-    <div class="js-swiper-cart-next swiper-button-next">{% include "snipplets/svg/chevron-right.tpl" with {svg_custom_class: "svg-inline--fa fa-w-8 fa-lg svg-icon-text"} %}</div>
-</div> #}
+
+
+

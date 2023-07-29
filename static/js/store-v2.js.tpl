@@ -631,6 +631,30 @@ DOMContentLoaded.addEventOrExecute(() => {
             }
         );
 
+         var cartShoppingSwiper = null;
+        createSwiper(
+             '.js-swiper-cart',
+             {
+                preloadImages: preloadImagesValue,
+                lazy: lazyValue,
+                {% if settings.slider | length > 1 %}
+                    loop: loopValue,
+                {% endif %}
+                autoplay: slider_autoplay,
+                watchOverflow: watchOverflowValue,
+                pagination: {
+                    el: '.js-swiper-cart-pagination',
+                    clickable: paginationClickableValue,
+                },
+                navigation: {
+                    nextEl: '.js-swiper-cart-next',
+                    prevEl: '.js-swiper-cart-prev',
+                },
+            },
+            function(swiperInstance) {
+                cartSwiper = swiperInstance;
+            }
+        );
 
         {% if sections.slider.products %}
 
