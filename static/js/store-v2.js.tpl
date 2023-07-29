@@ -509,6 +509,33 @@ DOMContentLoaded.addEventOrExecute(() => {
 	  #Sliders
 	==============================================================================*/ #}
 
+    {% if template == 'home' %}
+        var cartSwiper = null;
+        createSwiper(
+            '.js-swiper-cart',
+            {
+                preloadImages: false,
+                lazy: true,
+                loop: true,
+                slidesPerView: 2,
+                autoplay: true,
+                watchOverflow: true,
+                pagination: {
+                    el: '.js-swiper-home-pagination',
+                    clickable: paginationClickableValue,
+                },
+                navigation: {
+                    nextEl: '.js-swiper-cart-nex',
+                    prevEl: '.js-swiper-cart-prev',
+                },
+            },
+            function(swiperInstance) {
+                cartSwiper = swiperInstance;
+            }
+        );
+    {% endif %}
+
+
 	{% if template == 'home' %}
 
 		{# /* // Home slider */ #}
@@ -628,31 +655,6 @@ DOMContentLoaded.addEventOrExecute(() => {
             },
             function(swiperInstance) {
                 homeMobileSwiper = swiperInstance;
-            }
-        );
-
-         var cartShoppingSwiper = null;
-        createSwiper(
-             '.js-swiper-cart',
-             {
-                preloadImages: preloadImagesValue,
-                lazy: lazyValue,
-                {% if settings.slider | length > 1 %}
-                    loop: loopValue,
-                {% endif %}
-                autoplay: slider_autoplay,
-                watchOverflow: watchOverflowValue,
-                pagination: {
-                    el: '.js-swiper-cart-pagination',
-                    clickable: paginationClickableValue,
-                },
-                navigation: {
-                    nextEl: '.js-swiper-cart-next',
-                    prevEl: '.js-swiper-cart-prev',
-                },
-            },
-            function(swiperInstance) {
-                cartSwiper = swiperInstance;
             }
         );
 

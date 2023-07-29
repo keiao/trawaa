@@ -746,6 +746,13 @@ Carrito de compras
 		placeholder = Ej.: 3000
 	subtitle
 		subtitle = <span class='legend'>Ingresá solamente números</span>
+		description = Tus clientes pueden agregar y ver los productos que van a comprar sin necesidad de ir a otra página, ya que la información está siempre visible.
+	title
+		title = Titulo para carusel de productos sugeridos
+	text
+		name = cart_suggested_products_title
+		description = ¿Cuál es el título que querés mostrar en el carrusel del carrito de compras?
+		placeholder = Ej: Te recomendamos
 	title
 		title = Formas de entrega
 	checkbox_global

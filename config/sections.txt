@@ -5,3 +5,7 @@ slider
 primary
 	name = Destacados
 	description = Los productos aparecen destacados en la página de inicio (el diseño compacto muestra hasta 9 productos y el espaciado hasta 16).
+
+cart
+	name = Carrito de compra
+	description = Estos van a ser los productos de compra que van aparecer en el carrito de compras.
