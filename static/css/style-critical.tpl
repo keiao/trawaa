@@ -423,12 +423,19 @@ p{
   gap: 15px;
 }
 
+
+.swiper-wrapper-border{
+  border: 0.5px solid #d6d6d6;
+  padding: 10px;
+}
+
 .add-cart {
   border: none;
   background: none;
   position: absolute;
   bottom: 10px;
-  right: 20px;
+  right: 30px;
+  color: #878787;
 }
 
 {# /* // Lists */ #}

@@ -1,4 +1,4 @@
-<div class="js-swiper-cart swiper-container">
+{# <div class="js-swiper-cart swiper-container">
     <div class="swiper-cart-header">
         {% if settings.cart_suggested_products_title %}
             <h6>{{ settings.cart_suggested_products_title }}</h6>
@@ -14,6 +14,7 @@
         </div>
     </div>
 
+   <div class="swiper-wrapper-border">
     <div class="swiper-wrapper">
         {% for product in sections.cart.products %}
         {% set item_img_srcset = product.featured_image %}
@@ -82,7 +83,7 @@
 
                         <input
                             type="submit"
-                            class="js-addtocart add-car js-prod-submit-form {{ state }}"
+                            class="js-addtocart add-cart js-prod-submit-form {{ state }}"
                             value="{{ texts[state] | translate }}"
                             {% if state == 'nostock' %}disabled{% endif %} data-component="product-list-item.add-to-cart"
                             data-component-value="{{ product.id }}" />
@@ -96,7 +97,8 @@
     {% endfor %}
     </div>
 </div>
+</div>
 
 
 
-
+ #}
