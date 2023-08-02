@@ -35,6 +35,7 @@ style-colors.scss.tpl
     // Labels
     // Sliders
     // Lists
+    // Borders
   #Home page
     // Banners
     // Video
@@ -865,6 +866,12 @@ input[type="radio"]:checked {
   font-family: $heading-font;
 }
 
+
+{# /* // Borders */ #}
+
+.border-gray {
+  border-color: rgba($main-foreground, .1);
+}
 
 {#/*============================================================================
   #Home Page

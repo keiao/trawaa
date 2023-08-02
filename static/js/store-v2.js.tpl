@@ -518,8 +518,9 @@ DOMContentLoaded.addEventOrExecute(() => {
                 lazy: true,
                 loop: true,
                 slidesPerView: 2,
-                autoplay: true,
+                autoplay: false,
                 watchOverflow: true,
+                spaceBetween: 30,
                 pagination: {
                     el: '.js-swiper-home-pagination',
                     clickable: paginationClickableValue,
@@ -1562,6 +1563,7 @@ DOMContentLoaded.addEventOrExecute(() => {
                     $productButtonPlaceholder.hide();
                     $productButton.show();
                 }
+                // console.log(this, 'hola {{ store.editable_ajax_cart_enabled }}');
                 $prod_form = jQueryNuvem(this).closest("form");
                 LS.addToCartEnhanced(
                     $prod_form,

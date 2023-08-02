@@ -748,7 +748,10 @@ Carrito de compras
 		subtitle = <span class='legend'>Ingresá solamente números</span>
 		description = Tus clientes pueden agregar y ver los productos que van a comprar sin necesidad de ir a otra página, ya que la información está siempre visible.
 	title
-		title = Titulo para carusel de productos sugeridos
+		title = Carrusel de productos sugeridos
+	checkbox_global
+		name = cart_suggested_products_show
+		description = Mostrar productos sugeridos en el carrito
 	text
 		name = cart_suggested_products_title
 		description = ¿Cuál es el título que querés mostrar en el carrusel del carrito de compras?

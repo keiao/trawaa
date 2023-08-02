@@ -79,7 +79,7 @@
 
 {% endif %}
 
-
+{% include 'snipplets/cart-slider-product.tpl' %}
 
 {# Newsletter #}
 {% include "snipplets/newsletter.tpl" %}

@@ -39,11 +39,17 @@
 		{% endif %}
 		<div class="col-auto pl-4">
 	{% endif %}
-	{% if not store.is_catalog %}    
-	<a {% if settings.ajax_cart and template != 'cart' %}href="#" class="js-modal-open js-toggle-cart js-fullscreen-modal-open utilities-item" data-toggle="#modal-cart" data-modal-url="modal-fullscreen-cart"{% else %}href="{{ store.cart_url }}" class="utilities-item" {% endif %} data-component="cart-button">
-		{% include "snipplets/svg/shopping-bag.tpl" %}
-		<span class="js-cart-widget-amount cart-widget-amount">{{ "{1}" | translate(cart.items_count ) }}</span>
-	</a>
+	{% if not store.is_catalog %}
+		<a 
+		{% if settings.ajax_cart and template != 'cart' %}
+			href="#" class="js-modal-open js-toggle-cart js-fullscreen-modal-open utilities-item" data-toggle="#modal-cart" data-modal-url="modal-fullscreen-cart"
+		{% else %}
+			href="{{ store.cart_url }}" class="utilities-item" 
+		{% endif %} 
+		data-component="cart-button">
+			{% include "snipplets/svg/shopping-bag.tpl" %}
+			<span class="js-cart-widget-amount cart-widget-amount">{{ "{1}" | translate(cart.items_count ) }}</span>
+		</a>
 	{% endif %}
 	{% if settings.search_more_visible or settings.account_more_visible %}
 	</div>
