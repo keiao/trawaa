@@ -79,7 +79,11 @@
 
 {% endif %}
 
-{% include 'snipplets/cart-slider-product.tpl' %}
 
 {# Newsletter #}
 {% include "snipplets/newsletter.tpl" %}
+
+
+{# <div style="width: 100%; max-width:100%; min-width: 0px; padding: 0 100px;">
+	{% include 'snipplets/cart-slider-product.tpl' %}
+</div> #}

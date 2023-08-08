@@ -17,7 +17,7 @@
             </div>
 
             <div class="swiper-wrapper">
-                {% for product in sections.cart.products %}
+                {% for product in sections.primary.products %}
                     {% set item_img_srcset = product.featured_image %}
                     {% set item_img_alt = product.featured_image.alt %}
 
@@ -40,10 +40,18 @@
                             {% endif %}"
                             class="js-product-container js-quickshop-container item-container"
                             data-variants="{{ product.variants_object | json_encode }}">
-                            <img
-                                class="js-item-image lazyload cart-shopping-item-img"
-                                src="{{ item_img_srcset | product_image_url('small')}}"
-                                alt="{{ item_img_alt }}">
+                                <img
+                                    alt="{{ item_img_alt }}"
+                                    src="{{ 'images/empty-placeholder.png' | static_url }}"
+                                    data-srcset="
+                                        {{ item_img_srcset | product_image_url('small')}} 240w, 
+                                        {{ item_img_srcset | product_image_url('medium')}} 320w,
+                                        {{ item_img_srcset | product_image_url('large')}} 480w,
+                                        {{ item_img_srcset | product_image_url('huge') }} 640w,
+                                        {{ item_img_srcset | product_image_url('original') }} 1024w"
+                                    class="js-item-image lazyload cart-shopping-item-img fade-in"
+                                    data-expand="-10"
+                                />
 
                             <div class="cart-shopping-info">
                                 <h5 class="js-item-name cart-shopping-title"
@@ -91,7 +99,7 @@
 
                                     <input
                                         type="submit"
-                                        class="js-addtocart js-prod-submit-form {{ state }}"
+                                        class="js-addtocart js-add-to-card-not-toggle js-prod-submit-form {{ state }} btn-add-to-cart"
                                         value="{{ texts[state] | translate }}"
                                         {% if state == 'nostock' %}disabled{% endif %} 
                                         data-component="product-list-item.add-to-cart"
@@ -99,7 +107,20 @@
 
 
 
-                                    {% include 'snipplets/placeholders/button-placeholder.tpl' with {custom_class: "mb-2" , quickshop: true} %}
+                                    <div class="js-addtocart js-addtocart-placeholder btn btn-primary 
+                                        btn-{% if quickshop %}small{% else %}block{% endif %} 
+                                        btn-transition {{ custom_class }} disabled"
+                                        style="display: none;">
+                                        <div class="d-inline-block">
+                                            <span class="js-addtocart-text">{{ 'Agregar al carrito' | translate }}</span>
+                                            <span class="js-addtocart-success transition-container btn-transition-success{% if quickshop %}-small{% endif %}">
+                                                {{ '¡Listo!' | translate }}
+                                            </span>
+                                            <div class="js-addtocart-adding transition-container transition-soft btn-transition-progress{% if quickshop %}-small{% endif %}">
+                                                <div class="spinner-ellipsis-invert"></div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </form>
                             </div>
                         </div>

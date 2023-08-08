@@ -414,6 +414,10 @@ p{
 
 .swiper-cart-control {
   cursor: pointer;
+  &.swiper-button-disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
 }
 
 .cart-shopping-item-img {
@@ -433,6 +437,10 @@ p{
   bottom: 10px;
   right: 30px;
   color: #878787;
+}
+
+.btn-add-to-cart {
+  border: none;
 }
 
 {# /* // Lists */ #}
