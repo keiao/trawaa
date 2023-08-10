@@ -434,13 +434,18 @@ p{
   border: none;
   background: none;
   position: absolute;
-  bottom: 10px;
-  right: 30px;
+  bottom: 16px;
   color: #878787;
+  cursor: pointer;
 }
 
 .btn-add-to-cart {
   border: none;
+}
+
+
+.item-container-cart {
+  display: flex;
 }
 
 {# /* // Lists */ #}

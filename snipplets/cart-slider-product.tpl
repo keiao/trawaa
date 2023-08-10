@@ -17,7 +17,7 @@
             </div>
 
             <div class="swiper-wrapper">
-                {% for product in sections.primary.products %}
+                {% for product in sections.cart.products %}
                     {% set item_img_srcset = product.featured_image %}
                     {% set item_img_alt = product.featured_image.alt %}
 
@@ -38,7 +38,7 @@
                             {% if slide_item %}
                                 slide-item
                             {% endif %}"
-                            class="js-product-container js-quickshop-container item-container"
+                            class="js-product-container js-quickshop-container item-container-cart"
                             data-variants="{{ product.variants_object | json_encode }}">
                                 <img
                                     alt="{{ item_img_alt }}"
@@ -99,7 +99,7 @@
 
                                     <input
                                         type="submit"
-                                        class="js-addtocart js-add-to-card-not-toggle js-prod-submit-form {{ state }} btn-add-to-cart"
+                                        class="js-addtocart js-add-to-card-not-toggle js-prod-submit-form add-cart {{ state }} btn-add-to-cart"
                                         value="{{ texts[state] | translate }}"
                                         {% if state == 'nostock' %}disabled{% endif %} 
                                         data-component="product-list-item.add-to-cart"

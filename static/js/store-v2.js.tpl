@@ -514,30 +514,26 @@ DOMContentLoaded.addEventOrExecute(() => {
         createSwiper(
             '.js-swiper-cart',
             {
-                // preloadImages: false,
-                // lazy: true,
-                // loop: true,
+                preloadImages: false,
+                lazy: true,
+                loop: true,
                 slidesPerView: 2,
                 autoplay: false,
                 watchOverflow: true,
                 spaceBetween: 30,
                 pagination: {
                     el: '.js-swiper-home-pagination',
-                    clickable: true,
+                    clickable: paginationClickableValue,
                 },
                 navigation: {
-                    nextEl: '.js-swiper-cart-next',
+                    nextEl: '.js-swiper-cart-nex',
                     prevEl: '.js-swiper-cart-prev',
                 },
             },
             function(swiperInstance) {
-                console.log('swiperInstance')
                 cartSwiper = swiperInstance;
-                console.log({
-                    cartSwiper,
-                    swiperInstance
-                })
-            }
+            },
+         
         );
     {% endif %}
 
@@ -1519,10 +1515,9 @@ DOMContentLoaded.addEventOrExecute(() => {
                         $productButton.show();
                     },4000);
 
-                    var isToggleModalCard = $productButton.hasClass('js-add-to-card-not-toggle');
                     $productContainer.find(".js-added-to-cart-product-message").slideDown();
-
-                    if (!isToggleModalCard && window.innerWidth > 768) {
+                    
+                    if (window.innerWidth > 768) {
                         jQueryNuvem(".js-toggle-cart").trigger('click');
                     }else{
                        {# Show notification and hide it only after second added to cart #}
