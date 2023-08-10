@@ -297,7 +297,13 @@ DOMContentLoaded.addEventOrExecute(() => {
     }
 
     jQueryNuvem(document).on("click", ".js-modal-open", function(e) {
-        e.preventDefault(); 
+        e.preventDefault();
+        setTimeout(() => {
+            if (cartSwiper) {
+                cartSwiper.update();
+            }
+        }, 500);
+
         var modal_id = jQueryNuvem(this).data('toggle');
         var $overlay_id = jQueryNuvem('.js-modal-overlay[data-modal-id="' + modal_id + '"]');
         if (jQueryNuvem(modal_id).hasClass("modal-show")) {
@@ -514,10 +520,8 @@ DOMContentLoaded.addEventOrExecute(() => {
         createSwiper(
             '.js-swiper-cart',
             {
-                preloadImages: false,
                 lazy: true,
-                loop: true,
-                slidesPerView: 2,
+                slidesPerView: 1,
                 autoplay: false,
                 watchOverflow: true,
                 spaceBetween: 30,
@@ -526,7 +530,7 @@ DOMContentLoaded.addEventOrExecute(() => {
                     clickable: paginationClickableValue,
                 },
                 navigation: {
-                    nextEl: '.js-swiper-cart-nex',
+                    nextEl: '.js-swiper-cart-next',
                     prevEl: '.js-swiper-cart-prev',
                 },
             },
@@ -1516,8 +1520,10 @@ DOMContentLoaded.addEventOrExecute(() => {
                     },4000);
 
                     $productContainer.find(".js-added-to-cart-product-message").slideDown();
+
+                    var isToggleModalCard = $productButton.hasClass('js-add-to-card-not-toggle');
                     
-                    if (window.innerWidth > 768) {
+                    if (!isToggleModalCard && window.innerWidth > 768) {
                         jQueryNuvem(".js-toggle-cart").trigger('click');
                     }else{
                        {# Show notification and hide it only after second added to cart #}

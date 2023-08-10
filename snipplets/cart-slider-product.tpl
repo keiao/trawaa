@@ -17,7 +17,7 @@
             </div>
 
             <div class="swiper-wrapper">
-                {% for product in sections.cart.products %}
+                {% for product in sections.primary.products %}
                     {% set item_img_srcset = product.featured_image %}
                     {% set item_img_alt = product.featured_image.alt %}
 
@@ -99,7 +99,7 @@
 
                                     <input
                                         type="submit"
-                                        class="js-addtocart js-add-to-card-not-toggle js-prod-submit-form add-cart {{ state }} btn-add-to-cart"
+                                        class="js-addtocart js-add-to-card-not-toggle js-prod-submit-form {{ state }} btn-add-to-cart"
                                         value="{{ texts[state] | translate }}"
                                         {% if state == 'nostock' %}disabled{% endif %} 
                                         data-component="product-list-item.add-to-cart"
