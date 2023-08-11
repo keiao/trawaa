@@ -1634,6 +1634,28 @@ footer {
       color: $primary-color;
     } 
   }
+
+.btn-cart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @extend %border-radius;
+  background-color: $primary-color;
+  color: $main-background;
+  font-size: 12px;
+  padding: 5px;
+  @include prefix(box-shadow, inset 0 0 0 2px $primary-color, webkit ms moz o);
+  @include prefix(transition, all 0.25s ease-in, webkit ms moz o);
+
+  &:hover:not(.btn-transition) {
+    background-color: $main-background;
+    color: $primary-color;
+
+  }
+}
+
+
+
   .btn-facebook {
     padding: 5px 20px 15px 20px;
     background-color: #1977f2;

@@ -521,10 +521,10 @@ DOMContentLoaded.addEventOrExecute(() => {
             '.js-swiper-cart',
             {
                 lazy: true,
-                slidesPerView: 1,
+                slidesPerView: 2,
                 autoplay: false,
                 watchOverflow: true,
-                spaceBetween: 30,
+                spaceBetween: 250,
                 pagination: {
                     el: '.js-swiper-home-pagination',
                     clickable: paginationClickableValue,

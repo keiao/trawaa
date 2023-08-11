@@ -84,7 +84,7 @@
                                     'catalog' : (product.available ? product.display_price ? 'cart' : 'contact' : 'nostock') 
                                 %}
                                 {% 
-                                    set texts = {'cart': "Agregar", 'contact': "Consultar", 'nostock': "Sin stock", 'catalog': "Consultar"} 
+                                    set texts = {'cart': "Agregar +", 'contact': "Consultar", 'nostock': "Sin stock", 'catalog': "Consultar"} 
                                 %}
 
                                 <form
@@ -99,28 +99,29 @@
 
                                     <input
                                         type="submit"
-                                        class="js-addtocart js-add-to-card-not-toggle js-prod-submit-form {{ state }} btn-add-to-cart"
+                                        class="js-addtocart js-add-to-card-not-toggle js-prod-submit-form {{ state }} add-cart"
                                         value="{{ texts[state] | translate }}"
                                         {% if state == 'nostock' %}disabled{% endif %} 
                                         data-component="product-list-item.add-to-cart"
                                         data-component-value="{{ product.id }}" />
 
-
-
-                                    <div class="js-addtocart js-addtocart-placeholder btn btn-primary 
-                                        btn-{% if quickshop %}small{% else %}block{% endif %} 
-                                        btn-transition {{ custom_class }} disabled"
-                                        style="display: none;">
-                                        <div class="d-inline-block">
-                                            <span class="js-addtocart-text">{{ 'Agregar al carrito' | translate }}</span>
-                                            <span class="js-addtocart-success transition-container btn-transition-success{% if quickshop %}-small{% endif %}">
-                                                {{ '¡Listo!' | translate }}
-                                            </span>
-                                            <div class="js-addtocart-adding transition-container transition-soft btn-transition-progress{% if quickshop %}-small{% endif %}">
-                                                <div class="spinner-ellipsis-invert"></div>
+                                    <div class="btn-styles">
+                                        <div class="js-addtocart js-addtocart-placeholder btn-cart
+                                            btn-{% if quickshop %}small{% else %}block{% endif %} 
+                                            btn-transition {{ custom_class }} disabled"
+                                            style="display: none;">
+                                            <div class="d-inline-block">
+                                                <span class="js-addtocart-text">{{ 'Agregando . . .' | translate }}</span>
+                                                <span class="js-addtocart-success transition-container btn-transition-success{% if quickshop %}-small{% endif %}">
+                                                    {{ '¡Listo!' | translate }}
+                                                </span>
+                                                <div class="js-addtocart-adding transition-container transition-soft btn-transition-progress{% if quickshop %}-small{% endif %}">
+                                                    <div class="spinner-ellipsis-invert"></div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
+
                                 </form>
                             </div>
                         </div>
