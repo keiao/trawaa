@@ -450,10 +450,8 @@ p{
 .btn-styles {
   position: absolute;
   bottom: 12px;
-  left: 175px;
   width: 130px;
   text-align: center; 
-  white-space: nowrap;
 }
 
 {# /* // Lists */ #}
