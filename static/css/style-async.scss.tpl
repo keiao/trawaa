@@ -168,6 +168,10 @@ style-async.scss.tpl
   overflow: hidden;
   .transition-container {
     position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    margin-top: -20px;
     opacity: 0;
     text-align: center;
     @include prefix(transition, all 0.5s ease, webkit ms moz o);
