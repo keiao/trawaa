@@ -425,7 +425,7 @@ textarea{
   -webkit-overflow-scrolling: touch;
   overflow-y: auto;
   @include prefix(transition, all .4s ease-in-out, webkit ms moz o);
-  z-index: 20000;
+  z-index: 20100;
   &-zindex-top{
     z-index: 20001;
   }

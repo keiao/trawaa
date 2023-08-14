@@ -67,12 +67,8 @@
 		{% endblock %}
 		{% block modal_body %}
 			{% snipplet "cart-panel.tpl" %}
-
 		{% endblock %}
 		{% block modal_foot %}
-			<div style="width: 100%; max-width:100%; min-width: 0px; padding: 0 100px;">
-				{% include "snipplets/cart-slider-product.tpl" %}
-			</div>
 			{% include "snipplets/cart-totals-and-cta.tpl" %}
 		{% endblock %}
 	{% endembed %}

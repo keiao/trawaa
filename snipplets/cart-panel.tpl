@@ -16,6 +16,10 @@
     </div>
 </div>
 
+<div style="width: 100%; max-width:100%; min-width: 0px;">
+  {% include "snipplets/cart-slider-product.tpl" %}
+</div>
+
 {# Check if store has free shipping without regions or categories #}
 
 {% set has_free_shipping = cart.free_shipping.cart_has_free_shipping or cart.free_shipping.min_price_free_shipping.min_price %}

@@ -515,20 +515,15 @@ DOMContentLoaded.addEventOrExecute(() => {
 	  #Sliders
 	==============================================================================*/ #}
 
-    {% if template == 'home' %}
+    {% if template == 'home' or template == 'product' %}
         var cartSwiper = null;
         createSwiper(
             '.js-swiper-cart',
             {
                 lazy: true,
-                slidesPerView: 2,
-                autoplay: false,
+                slidesPerView: 1,
+                autoplay: true,
                 watchOverflow: true,
-                spaceBetween: 250,
-                pagination: {
-                    el: '.js-swiper-home-pagination',
-                    clickable: paginationClickableValue,
-                },
                 navigation: {
                     nextEl: '.js-swiper-cart-next',
                     prevEl: '.js-swiper-cart-prev',
@@ -1441,7 +1436,7 @@ DOMContentLoaded.addEventOrExecute(() => {
             var quantity = jQueryNuvem('.js-quantity-input').val();
             var name = $productContainer.find('.js-product-name').text();
         } else {
-            var imageSrc = jQueryNuvem(this).closest('.js-item-product').find('img').attr('srcset').split(' ')[0];
+            var imageSrc = jQueryNuvem(this).closest('.js-item-product')?.find('img')?.attr('srcset')?.split(' ')[0];
             var quantity = 1;
             var name = $productContainer.find('.js-item-name').text();
         }
