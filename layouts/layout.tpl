@@ -161,7 +161,6 @@
         {% endif %}
 
         {% if settings.theme_variant == 'rounded' %}
-            {% snipplet "maincontent-borders.tpl" %}
         {% endif %}
 
         </div>

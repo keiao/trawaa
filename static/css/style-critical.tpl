@@ -1079,8 +1079,11 @@ p{
 }
 .item-description {
   position: relative;
-  height: 110px;
-  padding: 5px;
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
 }
 .item-name {
   font-size: 16px;
@@ -1374,7 +1377,8 @@ p{
 
   .main-content {
     position: relative;
-    padding: 15px;
+    overflow-x: hidden;
+    {# padding: 15px; #}
   }
 
   .no-gutters {
@@ -1513,10 +1517,6 @@ p{
     padding: 15px;
   }
 
-  .item-description {
-    position: relative;
-    height: 130px;
-  }
 
   .item-colors {
     position: absolute;
@@ -1568,7 +1568,7 @@ p{
 
     .main-content {
       position: relative;
-      padding: 20px;
+      {# padding: 20px; #}
     }
 
     .head-fix {

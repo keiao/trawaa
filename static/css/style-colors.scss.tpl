@@ -1075,6 +1075,8 @@ input[type="radio"]:checked {
 }
 
 .head-light{
+  position: sticky;
+  top: 0;
   background-color: $main-background;
   @extend %simplefade;
   .cart-widget-amount,
@@ -1654,8 +1656,6 @@ footer {
   }
 }
 
-
-
   .btn-facebook {
     padding: 5px 20px 15px 20px;
     background-color: #1977f2;
@@ -1802,7 +1802,7 @@ footer {
 
   .item-container {
     background: $main-background;
-    @include prefix(box-shadow,  0 0 10px 0 rgba(0,0,0,0.08), webkit ms moz o);
+    {# @include prefix(box-shadow,  0 0 10px 0 rgba(0,0,0,0.08), webkit ms moz o); #}
   }
   .item-buy-open {
     background: $primary-color;
