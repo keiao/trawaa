@@ -1066,6 +1066,8 @@ input[type="radio"]:checked {
 {# /* // Header */ #}
 
 .head-main {
+    position: sticky;
+    top: 0;
   .utilities-container {
     .form-select,
     .search-input {
@@ -1075,8 +1077,6 @@ input[type="radio"]:checked {
 }
 
 .head-light{
-  position: sticky;
-  top: 0;
   background-color: $main-background;
   @extend %simplefade;
   .cart-widget-amount,

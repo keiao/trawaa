@@ -1377,14 +1377,9 @@ p{
 
   .main-content {
     position: relative;
-    overflow-x: hidden;
     {# padding: 15px; #}
   }
 
-  .no-gutters {
-    margin-right: -15px;
-    margin-left: -15px;
-  }
 
   .no-gutters>.col, .no-gutters>[class*=col-] {
     padding-right: 15px;
@@ -1470,6 +1465,13 @@ p{
   .section-slider {
     height: calc(100vh - 20px);
     margin-top:  -5px;
+  }
+
+  .featured-h2{
+    font-size: 20px;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 50px;
   }
 
   {# /* /Banners */ #}

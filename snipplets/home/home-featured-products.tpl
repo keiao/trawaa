@@ -11,7 +11,7 @@
 	    		{% if settings.theme_variant != 'squared' %}
 					<div class="featured-title col-md-12 text-center">
 			            {% if settings.featured_products_title %}
-					        <h2 class="my-5 mb-md-5">{{ settings.featured_products_title }}</h2>
+					        <h2 class="featured-h2">{{ settings.featured_products_title }}</h2>
 					    {% endif %}
 			        </div>
 			    {% endif %}
