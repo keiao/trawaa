@@ -34,7 +34,7 @@
 					    {% endif %}
 					{% endif %}
 						    	<div class="featured-item {% if settings.theme_variant == 'squared' %}{% if loop.index == 4 or loop.index == 5 %}featured-item-big{% endif %} col-md-6{% else %}col-md-3{% endif %}">
-						            {% include 'snipplets/grid/item.tpl' with {'square_item': true}  %}
+						            {% include 'snipplets/grid/item-2.tpl' with {'square_item': true}  %}
 						        </div>
 
 					{# This if closes the container columns of the smallest modules #}

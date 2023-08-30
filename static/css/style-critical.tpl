@@ -1078,12 +1078,11 @@ p{
   padding: 20px 10px 0 10px;
 }
 .item-description {
-  position: relative;
-  height: 130px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 5px;
+  margin-top: 10px;
+  margin-bottom: 40px;
 }
 .item-name {
   font-size: 16px;
@@ -1095,7 +1094,6 @@ p{
   -webkit-box-orient: vertical;
 }
 .item-price-container { 
-  margin-bottom: 10px;
   font-size: 16px;
 }
 .item-installments { 
@@ -1380,43 +1378,9 @@ p{
     {# padding: 15px; #}
   }
 
-
   .no-gutters>.col, .no-gutters>[class*=col-] {
     padding-right: 15px;
     padding-left: 15px;
-  }
-
-  .body-border-top {
-    height: 10px;
-    width: 100%;
-    top: 0;
-    left: 0;
-    position: fixed;
-    z-index: 10000;
-  }
-  .body-border-bottom {
-    height: 10px;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-    position: fixed;
-    z-index: 10000;
-  }
-  .body-border-right {
-    height: 100%;
-    width: 10px;
-    bottom: 0;
-    right: 0;
-    position: fixed;
-    z-index: 10000;
-  }
-  .body-border-left {
-    height: 100%;
-    width: 10px;
-    bottom: 0;
-    left: 0;
-    position: fixed;
-    z-index: 10000;
   }
 
   .head-fix {
@@ -1557,17 +1521,7 @@ p{
 
   {# /* /Media queries */ #}
 
-  @media (min-width: 768px) { 
-
-    .body-border-top,
-    .body-border-bottom {
-      height: 20px;
-    }
-    .body-border-right,
-    .body-border-left {
-      width: 20px;
-    }
-
+  @media (min-width: 768px) {
     .main-content {
       position: relative;
       {# padding: 20px; #}

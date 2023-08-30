@@ -46,7 +46,7 @@
                                     <h3 class="{% if settings.theme_variant == 'squared' %}h2{% else %}{% if num_banners == 4 and ( loop.index == 3 or loop.index == 4 ) %}h2 mb-2{% else %}h2 h1-md mb-5{% endif %}{% endif %} textbanner-title {% if banner_url and banner_button_text %}textbanner-title-with-btn{% endif %}">{{ banner_title }}</h3>
                                 {% endif %}
                                 {% if banner_url and banner_button_text %}
-                                    <div class="btn btn-line btn-small textbanner-btn">{{ banner_button_text }}</div>
+                                    <div class="btn btn-small textbanner-btn">{{ banner_button_text }}</div>
                                 {% endif %}
                             </div>
                             {% if banner_url %}
