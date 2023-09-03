@@ -1,6 +1,6 @@
 <section class="section-banners-home" data-store="banner-home-categories">
     <div class="container-fluid p-0">
-        <div class="row align-items-center no-gutters">
+        <div class="banner-container">
             
             {% if settings.banner_01_show and ( settings.banner_01_title or "banner_01.jpg" | has_custom_image) %}{% set has_banner_01 = true %}{% endif %}
             {% if settings.banner_02_show and ( settings.banner_02_title or "banner_02.jpg" | has_custom_image) %}{% set has_banner_02 = true %}{% endif %}
@@ -14,7 +14,7 @@
                 {% set banner_button_text = attribute(settings,"#{banner}_button") %}
                 {% set has_banner =  banner_show and (banner_title or "#{banner}.jpg" | has_custom_image) %}
                 {% if has_banner %}
-                    {% set num_banners = num_banners + 1 %}
+                    {% set num_banners = num_banners + 3 %}
                 {% endif %}
             {% endfor %}
 
@@ -28,10 +28,10 @@
                 {% if has_banner %}
 
                     {% if num_banners == 4 and loop.index == 2 %}
-                    <div class="col-md{% if settings.theme_variant == 'squared' %}-6{% else %}-7{% endif %}">
-                        <div class="row no-gutters">
+                    <div class="col-banner{% if settings.theme_variant == 'squared' %}-6{% else %}-7{% endif %}">
+                        <div class="row">
                     {% endif %}
-                    <div class="col-md{% if num_banners == 1 %}-12{% elseif num_banners == 3 %}{% if has_banner_01 %}{% if loop.index == 1 %}{% if settings.theme_variant == 'squared' %}-6{% else %}-5{% endif %}{% else %}-12{% endif %}{% else %}{% if loop.index == 2 %}-12{% else %}{% if settings.theme_variant == 'squared' %}-6{% else %}-5{% endif %}{% endif %}{% endif %}{% elseif num_banners == 4 %}{% if loop.index == 1 %}{% if settings.theme_variant == 'squared' %}-6{% else %}-5{% endif %}{% elseif loop.index == 2 %}-12 {% else %}-6 {% endif %}{% else %}{% endif %}">
+                    <div class="col-banner{% if num_banners == 1 %}-12{% elseif num_banners == 3 %}{% if has_banner_01 %}{% if loop.index == 1 %}{% if settings.theme_variant == 'squared' %}-6{% else %}-5{% endif %}{% else %}-12{% endif %}{% else %}{% if loop.index == 2 %}-12{% else %}{% if settings.theme_variant == 'squared' %}-6{% else %}-5{% endif %}{% endif %}{% endif %}{% elseif num_banners == 4 %}{% if loop.index == 1 %}{% if settings.theme_variant == 'squared' %}-6{% else %}-5{% endif %}{% elseif loop.index == 2 %}-12 {% else %}-6 {% endif %}{% else %}{% endif %}">
                         <div class="textbanner {% if num_banners == 4 %}{% if loop.index != 1 %}banner-mid-height{% endif %}{% elseif num_banners == 3 %}{% if loop.index != 1 %}banner-mid-height{% endif %}{% endif %}">
                             {% if banner_url %}
                                 <a class="textbanner-link" href="{{ banner_url | setting_url }}"{% if banner_title %} title="{{ banner_title }}" aria-label="{{ banner_title }}"{% else %} title="{{ 'Banner de' | translate }} {{ store.name }}" aria-label="{{ 'Banner de' | translate }} {{ store.name }}"{% endif %}>
@@ -59,8 +59,8 @@
                     </div>
                     {% endif %}
                     {% if num_banners == 3 and has_banner_01 and loop.index == 1 %}
-                    <div class="col-md{% if settings.theme_variant == 'squared' %}-6{% else %}-7{% endif %}">
-                        <div class="row no-gutters">
+                    <div class="col-banner{% if settings.theme_variant == 'squared' %}-6{% else %}-7{% endif %}">
+                        <div class="row">
                     {% endif %}
 
                 {% endif %}

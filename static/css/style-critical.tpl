@@ -1440,6 +1440,19 @@ p{
 
   {# /* /Banners */ #}
 
+  .banner-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+  }
+
+  .col-banner{
+    position: relative;
+    width: 100%;
+    margin-top: -30px;
+  }
+
   .textbanner {
     height: calc(100vh - 80px);
   }
@@ -1525,6 +1538,18 @@ p{
     .main-content {
       position: relative;
       {# padding: 20px; #}
+    }
+
+    .banner-container{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .col-banner{
+      position: relative;
+      width: 100%;
+      margin: 0;
     }
 
     .head-fix {
