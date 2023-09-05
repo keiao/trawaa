@@ -696,9 +696,8 @@ textarea {
     -moz-appearance:textfield;
   }
   .btn{
-    ms-flex: 0 0 30px;
-    flex: 0 0 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     svg{
       margin-top: 5px;
     }
@@ -1605,7 +1604,6 @@ footer {
   }
 
   .btn-line{
-    @extend %border-radius;
     border: 1px solid;
     padding: 8px 20px 8px 24px;
     line-height: 18px;
@@ -1624,7 +1622,6 @@ footer {
     }
   }
   .btn-primary{
-    @extend %border-radius;
     background-color: $primary-color;
     color: $main-background;
     font-size: 16px;
@@ -1676,28 +1673,16 @@ footer {
     letter-spacing: 3px;
   }
 
-  .form-select,
-  .form-quantity,
-  .form-control,
-  .btn-default,
-  .label,
+ 
   .swiper-pagination-fraction{
     @extend %border-radius;
   }
 
-  .form-group-inline{
-    .form-control{
-      border-radius: 20px 0 0 20px;
-    }
-    .btn-default{
-      border-radius: 0 20px 20px 0;
-    }
-  }
+ 
   .form-control-icon{
     right: 15px;
   }
   .form-quantity .btn {
-    border-radius: 50%;
     background-color: $primary-color;
     svg {
       fill: $main-background;
@@ -1715,8 +1700,7 @@ footer {
     }
   }
 
-  textarea.form-control,
-  .alert{
+  .textarea.form-control{
     border-radius: 20px;
   }
 

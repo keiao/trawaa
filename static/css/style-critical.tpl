@@ -1524,7 +1524,6 @@ p{
     margin-bottom: 20px;
     padding: 4px 8px;
     box-shadow: 0 0 5px rgba(0,0,0,0.1);
-    border-radius: 50%;
     background: aqua;
   }
 
@@ -1570,7 +1569,7 @@ p{
     .collage-images{
       display: flex;
       flex-wrap: wrap;
-      gap: 3px;
+      gap: 3px; 
     }
    
 

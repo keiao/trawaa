@@ -340,7 +340,6 @@ textarea.form-control {
   float: none;
   font-weight: bold;
   color: $background-color;
-  border-radius: $form-control-radius;
   border-color: $primary-color;
   text-transform: uppercase;
 
