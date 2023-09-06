@@ -882,6 +882,24 @@ input[type="radio"]:checked {
   background-color: $main-foreground;
 }
 
+.accordion-container{
+  width: 100%;
+  cursor: pointer;
+}
+
+.accordion-header {
+  font-size: 12px;
+  position: relative;
+  
+}
+
+.accordion-icon{
+  position: absolute;
+  right: 0;
+  font-size: 16px;
+}
+
+
 {# /* // Video */ #}
 
 .video-player {
@@ -1674,11 +1692,19 @@ footer {
   }
 
  
+  .form-control,
   .swiper-pagination-fraction{
     @extend %border-radius;
   }
 
- 
+  .form-group-inline{
+    .form-control{
+      border-radius: 20px 0 0 20px;
+    }
+    .btn-default{ 
+      border-radius: 0 20px 20px 0;
+    }
+  }
   .form-control-icon{
     right: 15px;
   }
