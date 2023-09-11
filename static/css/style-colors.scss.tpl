@@ -1642,8 +1642,8 @@ footer {
   .btn-primary{
     background-color: $primary-color;
     color: $main-background;
-    font-size: 16px;
-    letter-spacing: 8px;
+    font-size: 13px;
+    letter-spacing: 5px;
     @include prefix(box-shadow, inset 0 0 0 2px $primary-color, webkit ms moz o);
     @include prefix(transition, all 0.25s ease-in, webkit ms moz o);
     &:hover:not(.btn-transition){
@@ -1859,6 +1859,22 @@ footer {
         }
       }
     }
+
+    .btn-primary{
+      background-color: $primary-color;
+      color: $main-background;
+      font-size: 16px;
+      letter-spacing: 8px;
+      @include prefix(box-shadow, inset 0 0 0 2px $primary-color, webkit ms moz o);
+      @include prefix(transition, all 0.25s ease-in, webkit ms moz o);
+      &:hover:not(.btn-transition){
+        background-color: $main-background;
+        color: $primary-color;
+      } 
+    }
+
+
+
   }
 
 {% endif %}

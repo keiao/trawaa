@@ -81,7 +81,7 @@
                 <div class="js-item-name item-name font-weight-light mt-1 mb-2 mx-2" data-store="product-item-name-{{ product.id }}">{{ product.name }}</div>
                 {% if product.display_price %}
                     <div class="item-price-container mb-1" data-store="product-item-price-{{ product.id }}">
-                        <span class="js-price-display item-price font-weight-bold">
+                        <span class="js-price-display item-price">
                             {{ product.price | money }}
                         </span>
                         <span class="js-compare-price-display price-compare" {% if not product.compare_at_price or not product.display_price %}style="display:none;"{% else %}style="display:inline-block;"{% endif %}>

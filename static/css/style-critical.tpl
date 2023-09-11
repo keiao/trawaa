@@ -1088,6 +1088,7 @@ p{
   font-size: 16px;
   line-height: 22px;
   text-overflow: ellipsis;
+  text-transform: uppercase;
   overflow: hidden;
   -webkit-line-clamp: 2;
   display: -webkit-box;
@@ -1433,9 +1434,11 @@ p{
 
   .featured-h2{
     font-size: 20px;
-    text-align: left;
+    letter-spacing: 2px;
+    font-weight: 400;
     margin-top: 20px;
     margin-bottom: 50px;
+    color: #cfcece;
   }
 
   {# /* /Banners */ #}
