@@ -7,7 +7,7 @@
         <div class="form-row mb-4 {% if loop.first and product.description is empty %}mt-4{% endif %}">
             <div class="accordion-container">
                 {% if product_informative_banner_title %}
-                    <div class="mb-1 font-weight-bold form-label accordion-header">
+                    <div class="mb-1 form-label accordion-header">
                         <span class="accordion-icon">+</span>
                         {{ product_informative_banner_title }}
                     </div>

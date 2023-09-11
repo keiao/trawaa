@@ -947,13 +947,14 @@ input[type="radio"]:checked {
 }
 
 .accordion-container{
+  font-weight: 300;
   width: 100%;
   cursor: pointer;
   font-family: $body-font;
 }
 
 .accordion-header {
-  font-size: 12px;
+  font-size: 15px;
   position: relative;
   
 }
@@ -1079,7 +1080,7 @@ input[type="radio"]:checked {
 
 .product-detail-installments .installment-no-interest {
   color: $accent-color;
-  font-weight: bold;
+  font-weight: 300;
 }
     
 .social-share {
@@ -1705,9 +1706,10 @@ footer {
     }
   }
   .btn-primary{
+    font-weight: 300;
     background-color: $primary-color;
     color: $main-background;
-    font-size: 13px;
+    font-size: 15px;
     letter-spacing: 5px;
     @include prefix(box-shadow, inset 0 0 0 2px $primary-color, webkit ms moz o);
     @include prefix(transition, all 0.25s ease-in, webkit ms moz o);
@@ -1862,6 +1864,7 @@ footer {
   {# /* Product detail */ #}
 
   .regular-price {
+    font-weight: 300;
     color: $primary-color;
   }
 
@@ -1925,18 +1928,7 @@ footer {
       }
     }
 
-    .btn-primary{
-      background-color: $primary-color;
-      color: $main-background;
-      font-size: 16px;
-      letter-spacing: 8px;
-      @include prefix(box-shadow, inset 0 0 0 2px $primary-color, webkit ms moz o);
-      @include prefix(transition, all 0.25s ease-in, webkit ms moz o);
-      &:hover:not(.btn-transition){
-        background-color: $main-background;
-        color: $primary-color;
-      } 
-    }
+    
 
 
 
