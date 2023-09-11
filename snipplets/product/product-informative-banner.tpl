@@ -19,9 +19,16 @@
                 <p class="m0">{{ product_informative_banner_description }}</p>
             {% endif %}
         </div>
+ {# <span class="material-symbols-outlined">
+            remove
+            </span>
+           
+            <span class="material-symbols-outlined">
+            add
+            </span> #}
 </div>
-
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 <script>
     $(document).ready(function() {
         // Maneja el clic en el encabezado del acordeón
