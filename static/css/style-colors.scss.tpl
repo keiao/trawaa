@@ -96,6 +96,70 @@ $danger-color: #D42007;
 
 {# /* // Font families */ #}
 
+@font-face {
+    font-family: 'TT Norms Pro';
+    src: url("{{ 'fonts/TTNormsPro-Bold.woff2' | static_url }}") format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Norms Pro';
+    src: url("{{ 'fonts/TTNormsPro-BoldItalic.woff2' | static_url }}") format('woff2');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Norms Pro';
+    src: url("{{ 'fonts/TTNormsPro-Italic.woff2' | static_url }}") format('woff2');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Norms Pro';
+    src: url("{{ 'fonts/TTNormsPro-LightItalic.woff2' | static_url }}") format('woff2');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Norms Pro';
+    src: url("{{ 'fonts/TTNormsPro-MediumItalic.woff2' | static_url }}") format('woff2');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Norms Pro';
+    src: url("{{ 'fonts/TTNormsPro-Regular.woff2' | static_url }}") format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Norms Pro';
+    src: url("{{ 'fonts/TTNormsPro-Medium.woff2' | static_url }}") format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Norms Pro';
+    src: url("{{ 'fonts/TTNormsPro-Light.woff2' | static_url }}") format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
 $heading-font: {{ settings.font_headings | raw }};
 $body-font: {{ settings.font_rest | raw }};
 

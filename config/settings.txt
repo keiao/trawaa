@@ -58,6 +58,7 @@ Tipo de letra
 		description = Títulos de páginas y banners
 		values
 			"Rubik", sans-serif = Rubik
+			"TT Norms Pro", sans-serif = TT Norms Pro
 			"Muli", sans-serif = Muli
 			"Playfair Display", Helvetica, Arial, sans-serif = Playfair
 			"Libre Baskerville", serif = Libre Baskerville
@@ -72,6 +73,7 @@ Tipo de letra
 		description = Texto en el resto del sitio
 		values
 			"Rubik", sans-serif = Rubik
+			"TT Norms Pro", sans-serif = TT Norms Pro
 			"Muli", sans-serif = Muli
 			"Lato", Helvetica, Arial, sans-serif = Lato
 			"Libre Baskerville", serif = Libre Baskerville
