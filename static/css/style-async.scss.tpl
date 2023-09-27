@@ -448,7 +448,6 @@ textarea{
     width: 100%;
     *{
       display: inline;
-      font-weight: bold;
     }
   }
   &-footer{
@@ -704,7 +703,8 @@ textarea{
       display: block;
       padding: 12px 0;
       font-size: 16px;
-      font-weight: 700;
+      font-weight: 400;
+      color: #000;
       }
     &-arrow {
       position: absolute;
@@ -1353,7 +1353,6 @@ footer {
   clear: both;
   padding-top: 15px;
   margin-top: 5px;
-  font-weight: bold;
   border-top: 1px solid rgba(0,0,0, 0.05);
 }
 .cart-promotion-detail{
@@ -1368,6 +1367,10 @@ footer {
   float: right;
   margin: 0;
   text-align: right;
+}
+
+.cart-total-title{
+  font-weight: 300;
 }
 
 {#/*============================================================================

@@ -27,7 +27,7 @@
         </div>
 
         {# Cart item subtotal mobile #}
-        <div class="js-cart-item-subtotal cart-item-subtotal font-weight-bold mb-3 {% if cart_page %}col-12 d-md-none{% else %}mt-2{% endif %}" data-line-item-id="{{ item.id }}" data-component="subtotal.value" data-component-value="{{item.subtotal}}">{{ item.subtotal | money }}</div>
+        <div class="js-cart-item-subtotal cart-item-subtotal  mb-3 {% if cart_page %}col-12 d-md-none{% else %}mt-2{% endif %}" data-line-item-id="{{ item.id }}" data-component="subtotal.value" data-component-value="{{item.subtotal}}">{{ item.subtotal | money }}</div>
 
         {# Cart item quantity controls #}
         {% if cart_page %}

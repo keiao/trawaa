@@ -795,6 +795,12 @@ p{
 
 {# /* // Cart widget */ #}
 
+.cart-title{
+  text-transform: uppercase;
+  font-weight: 400;
+
+}
+
 .utilities-item {
   display: inline-block;
   position: relative;
@@ -814,6 +820,8 @@ p{
   align-items: center;
   justify-content: center;
 }
+
+
     
 {# /* // Search */ #}
 

@@ -484,6 +484,9 @@ h6,.h6{
   color: $main-foreground;
 }
 
+.text-accent{
+  font-weight: 500;
+} 
 .text-accent,
 .cart-installments.installment-no-interest {
   color: $accent-color;
@@ -1080,7 +1083,7 @@ input[type="radio"]:checked {
 
 .product-detail-installments .installment-no-interest {
   color: $accent-color;
-  font-weight: 300;
+  font-weight: 500;
 }
     
 .social-share {
@@ -1759,19 +1762,12 @@ footer {
   }
 
  
-  .form-control,
+
   .swiper-pagination-fraction{
     @extend %border-radius;
   }
 
-  .form-group-inline{
-    .form-control{
-      border-radius: 20px 0 0 20px;
-    }
-    .btn-default{ 
-      border-radius: 0 20px 20px 0;
-    }
-  }
+
   .form-control-icon{
     right: 15px;
   }

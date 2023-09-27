@@ -8,7 +8,7 @@
 
 <div class="price-container" data-store="product-price-{{ product.id }}">
     <span class="d-inline-block mr-3">
-        <h3 class="js-price-display regular-price" id="price_display" {% if not product.display_price %}style="display:none;"{% endif %} data-product-price="{{ product.price }}">{% if product.display_price %}{{ product.price | money }}{% endif %}</h3>
+        <h3 class="js-price-display regular-price price-font" id="price_display" {% if not product.display_price %}style="display:none;"{% endif %} data-product-price="{{ product.price }}">{% if product.display_price %}{{ product.price | money }}{% endif %}</h3>
     </span>
     <span class="d-inline-block">
 	   <h3 id="compare_price_display" class="js-compare-price-display price-compare" {% if not product.compare_at_price or not product.display_price %}style="display:none;"{% else %} style="display:block;"{% endif %}>{% if product.compare_at_price and product.display_price %}{{ product.compare_at_price | money }}{% endif %}</h3>
@@ -61,7 +61,7 @@
         {% if hasDiscount %}
             <span class="col-12 mb-2">
                 {% include "snipplets/svg/money-bill-wave.tpl" with {fa_custom_class : "fa-lg mr-2 svg-icon-accent float-left"} %}
-                <span><strong class="text-accent">{{ product.maxPaymentDiscount.value }}% {{'de descuento' | translate }}</strong> {{'pagando con' | translate }} {{ product.maxPaymentDiscount.paymentProviderName }}</span>
+                <span><span class="text-accent">{{ product.maxPaymentDiscount.value }}% {{'de descuento' | translate }}</span> {{'pagando con' | translate }} {{ product.maxPaymentDiscount.paymentProviderName }}</span>
             </span>
         {% endif %}
         <a id="btn-installments" class="btn-link btn-link-primary font-small col" {% if not (product.get_max_installments and product.get_max_installments(false)) %}style="display: none;"{% endif %}>
@@ -76,6 +76,11 @@
         </a>
     </div>
 {% endif %}
+
+
+        <div class="product-description user-content">
+             {{ product.description }}
+        </div>
 
 {# Product form, includes: Variants, CTA and Shipping calculator #}
 
@@ -184,9 +189,7 @@
     {% elseif has_banners_and_description and not settings.product_informative_banners_title %}
        
         {% include 'snipplets/product/product-informative-banner.tpl' %}
-        <div class="product-description user-content">
-            {{ product.description }}
-        </div>
+     
 
         {# If there is no description, show only informative banners #}
 

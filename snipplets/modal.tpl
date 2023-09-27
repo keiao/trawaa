@@ -48,7 +48,7 @@
                 {% include "snipplets/svg/chevron-left.tpl" with {svg_custom_class: "svg-inline--fa fa-2x"} %}
             </span>
         {% endif %}
-        <h3 class="mb-0">{% block modal_head %}{% endblock %}</h3>
+        <h3 class="mb-0 cart-title">{% block modal_head %}{% endblock %}</h3>
         <span class="modal-close right {% if modal_position == 'right' %}d-none d-md-block{% endif %}">
             {% include "snipplets/svg/times.tpl" with {fa_custom_class: "fa-w-10"} %}
         </span>

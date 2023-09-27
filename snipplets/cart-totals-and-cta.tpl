@@ -109,7 +109,7 @@
 
   <div class="js-cart-total-container js-visible-on-cart-filled mb-3 mt-3 cart-total" {% if cart.items_count == 0 %}style="display:none;"{% endif %} data-store="cart-total">
     <h3 class="row text-primary mb-0">
-      <strong class="col">{{ "Total" | translate }}:</strong>
+      <strong class="col cart-total-title">{{ "Total" | translate }}:</strong>
       <strong class="js-cart-total {% if cart.free_shipping.cart_has_free_shipping %}js-free-shipping-achieved{% endif %} {% if cart.shipping_data.selected %}js-cart-saved-shipping{% endif %} col text-right" data-component="cart.total" data-component-value="{{ cart.total}}">{{ cart.total | money }}</strong>
     </h3>
 
